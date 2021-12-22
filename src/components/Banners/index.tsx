@@ -1,29 +1,38 @@
 import React from 'react';
 import { FaArrowCircleRight } from 'react-icons/fa';
 
-import styles from './styles.module.scss';
+import './style.scss';
 
 export const Banner: React.FC = () => {
   return (
     <>
-      <div className={styles.banners}>
-        <div className={styles.banner} id={styles.banner_1}>
-          <h2>Promoção de Notebooks</h2>
-          <a href="#">
-            Ver Mais <FaArrowCircleRight />
-          </a>
+      <div className="banners">
+        <div className="banner" id="banner_1">
+          <div className="banner-cover"></div>
+          <div className="banner-content">
+            <h2>Promoção de Notebooks</h2>
+            <a href="#">
+              Ver Mais <FaArrowCircleRight />
+            </a>
+          </div>
         </div>
-        <div className={styles.banner} id={styles.banner_2}>
-          <h2>Lançamento de Acessórios</h2>
-          <a href="#">
-            Ver Mais <FaArrowCircleRight />
-          </a>
+        <div className="banner" id="banner_2">
+          <div className="banner-cover"></div>
+          <div className="banner-content">
+            <h2>Lançamento de Acessórios</h2>
+            <a href="#">
+              Ver Mais <FaArrowCircleRight />
+            </a>
+          </div>
         </div>
-        <div className={styles.banner} id={styles.banner_3}>
-          <h2>Câmeras Potentes</h2>
-          <a href="#">
-            Ver Mais <FaArrowCircleRight />
-          </a>
+        <div className="banner" id="banner_3">
+          <div className="banner-cover"></div>
+          <div className="banner-content">
+            <h2>Câmeras Potentes</h2>
+            <a href="#">
+              Ver Mais <FaArrowCircleRight />
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -1,0 +1,8 @@
+@use '../../styles/mixins/base-mixins';
+@use '../../styles/mixins/layouts-mixins';
+@use '../../styles/modules/banners';
+
+.banners {
+  @include layouts-mixins.center-content;
+  padding-top: 3rem;
+}

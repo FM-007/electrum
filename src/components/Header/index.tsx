@@ -10,58 +10,66 @@ import {
 } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-import styles from './styles.module.scss';
+import './styles.scss';
 
 export const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.header__topContainer}>
-        <div className={styles.storeInfoContainer}>
-          <span>
-            <FaPhone /> (11)4444-3333
-          </span>
-          <span>
-            <MdEmail />
-            electrum_teste@email.com
-          </span>
-          <span>
-            <FaMapMarkerAlt />
-            Rua Teste, 1234
-          </span>
-        </div>
-        <div className={styles.header__userTopmenu}>
-          <span>
-            <FaDollarSign />
-            <a href="#"> BRL</a>
-          </span>
-          <span>
-            <FaUser />
-            <a href="#"> Minha Conta</a>
-          </span>
+    <header className="header">
+      <div className="header__topContainer">
+        <div className="container">
+          <div className="storeInfoContainer">
+            <span>
+              <FaPhone /> (11)4444-3333
+            </span>
+            <span>
+              <MdEmail />
+              electrum_teste@email.com
+            </span>
+            <span>
+              <FaMapMarkerAlt />
+              Rua Teste, 1234
+            </span>
+          </div>
+          <div className="header__userTopmenu">
+            <span>
+              <FaDollarSign />
+              <a href="#"> BRL</a>
+            </span>
+            <span>
+              <FaUser />
+              <a href="#"> Minha Conta</a>
+            </span>
+          </div>
         </div>
       </div>
-      <div className={styles.mainHeader}>
-        <div className={styles.mainHeader__container}>
-          <a href="#">
+      <div className="mainHeader">
+        <div className="mainHeader__container">
+          <a href="#" id="brand">
             Electrum <FaBolt />
           </a>
-          <form action="" id={styles.searchForm}>
-            <input type="text" id={styles.search} placeholder="Busque Aqui" />
-            <input type="submit" className={styles.btnHalf} value="Pesquisar" />
+          <form action="" id="searchForm">
+            <input type="text" id="search" placeholder="Busque Aqui" />
+            <input
+              type="submit"
+              className="btn btn__btnHalf"
+              value="Pesquisar"
+            />
           </form>
-          <div className={styles.wishList}>
-            <span className={styles.qty}>0</span>
-            <FaHeart />
-            <a href="#">Favoritos</a>
-          </div>
-          <div className={styles.headerCart}>
-            <span className={styles.qty}>0</span>
-            <FaShoppingCart />
-            <a href="#">Carrinho</a>
+          <div className="headerActionsMenu">
+            <div className="wishList">
+              <span className="qty">0</span>
+              <FaHeart />
+              <a href="#">Favoritos</a>
+            </div>
+            <div className="headerCart">
+              <span className="qty">0</span>
+              <FaShoppingCart />
+              <a href="#">Carrinho</a>
+            </div>
           </div>
         </div>
       </div>
-      <div className={styles.headerBottom}>
+      <div className="headerBottom">
         <nav>
           <ul>
             <li>
