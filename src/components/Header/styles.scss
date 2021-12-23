@@ -10,6 +10,10 @@
     background-color: variables.$secondary-bg-color;
     color: variables.$light-color;
 
+    @include base-mixins.mobile {
+      display: none;
+    }
+
     .container {
       @include layouts-mixins.center-content;
       padding: .8rem 0;
@@ -34,6 +38,11 @@
       @include layouts-mixins.center-content;
       padding: 1.3rem 0;
 
+      @include base-mixins.mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+
       a, span, svg {
         color: #FFF;
       }
@@ -54,6 +63,11 @@
         justify-content: center;
         width: 45%;
 
+        @include base-mixins.mobile {
+          width: 100%;
+          margin: 2rem 0;
+        }
+
         input {
           height: 40px;
         }
@@ -70,6 +84,10 @@
 
         .wishList, .headerCart {
           @include layouts-mixins.header-icon;
+
+          @include base-mixins.mobile {
+            margin: 1rem;
+          }
         }
       }
     }
@@ -84,6 +102,10 @@
       @include layouts-mixins.center-content;
       justify-content: left;
       padding: 1rem 0;
+
+      @include base-mixins.mobile {
+        display: none;
+      }
 
       li {
         margin-right: 1.3rem;

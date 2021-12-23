@@ -1,0 +1,29 @@
+@use '../../styles/mixins/base-mixins';
+@use '../../styles/mixins/layouts-mixins';
+@use '../../styles/modules/products';
+
+.products_grid {
+  @include layouts-mixins.center-content;
+  flex-direction: column;
+  padding: 2rem 0;
+
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    @include base-mixins.mobile {
+      text-align: center;
+    }
+  }
+
+  .products_grid_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    @include base-mixins.mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

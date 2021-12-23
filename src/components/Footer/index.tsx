@@ -10,14 +10,14 @@ import {
   FaCcApplePay,
 } from 'react-icons/fa';
 
-import styles from './styles.module.scss';
+import './style.scss';
 
 export const Footer: React.FC = () => {
   return (
     <>
-      <footer className={styles.footer}>
-        <div className={styles.footer_top}>
-          <div className={styles.footer_top_about}>
+      <footer className="footer">
+        <div className="footer_top">
+          <div className="footer_top_about">
             <h3>Sobre Nós</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
               <a href="#">electrum@email.com</a>
             </p>
           </div>
-          <div className={styles.footer_top_categories}>
+          <div className="footer_top_categories">
             <h3>Categorias</h3>
             <ul>
               <li>
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.footer_top_information}>
+          <div className="footer_top_information">
             <h3>Informações</h3>
             <ul>
               <li>
@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.footer_top_menu}>
+          <div className="footer_top_menu">
             <h3>Menu</h3>
             <ul>
               <li>
@@ -96,8 +96,8 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.footer_bottom}>
-          <div className={styles.footer_bottom_payments}>
+        <div className="footer_bottom">
+          <div className="footer_bottom_payments">
             <FaCcMastercard />
             <FaCcVisa />
             <FaCcDinersClub />
